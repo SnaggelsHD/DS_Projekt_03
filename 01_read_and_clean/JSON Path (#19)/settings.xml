@@ -10,7 +10,7 @@
         <entry key="remove.input.column" type="xboolean" value="false"/>
         <config key="newColumnName">
             <entry key="array-size" type="xint" value="6"/>
-            <entry key="0" type="xstring" value="station_iid"/>
+            <entry key="0" type="xstring" value="station_id"/>
             <entry key="1" type="xstring" value="num_bikes_available "/>
             <entry key="2" type="xstring" value="vehicle_type_id "/>
             <entry key="3" type="xstring" value="vehicle_count "/>
@@ -81,6 +81,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="3a0e91bf-1955-4de3-b404-a8f9409bba16"/>
+        <entry key="file_store_id" type="xstring" value="d188768d-99f8-4a46-929e-a21b36af6bbc"/>
     </config>
 </config>
