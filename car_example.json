@@ -1,0 +1,1 @@
+{"last_updated":1719140369,"ttl":60,"version":"2.3","timestamp":"2024-06-21T15:00:00","data":{"stations":[{"station_id":"DER:Station:5a530bb20d1dff00063bd779","num_bikes_available":0,"vehicle_types_available":[{"vehicle_type_id":"DER:VehicleType:vw_id4_pro_150kw","count":0}],"is_installed":true,"is_renting":true,"is_returning":true,"last_reported":1719140369}]}}
