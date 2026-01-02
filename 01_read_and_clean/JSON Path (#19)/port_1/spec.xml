@@ -32,7 +32,7 @@
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
                 <config key="org.knime.core.data.def.IntCell">
-                    <entry key="IntCell" type="xint" value="3435"/>
+                    <entry key="IntCell" type="xint" value="3433"/>
                 </config>
             </config>
         </config>
@@ -106,7 +106,7 @@
         </config>
         <config key="column_type">
             <config key="collection_element_type">
-                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
+                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
             </config>
             <entry key="cell_class" type="xstring" value="org.knime.core.data.collection.ListCell"/>
         </config>
@@ -121,7 +121,7 @@
         </config>
         <config key="column_type">
             <config key="collection_element_type">
-                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
+                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
             </config>
             <entry key="cell_class" type="xstring" value="org.knime.core.data.collection.ListCell"/>
         </config>

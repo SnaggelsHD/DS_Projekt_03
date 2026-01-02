@@ -12,7 +12,7 @@
             <entry key="1" type="xstring" value="// $double column name$ &gt; 5.0 =&gt; FALSE"/>
             <entry key="2" type="xstring" value="// $string column name$ LIKE &quot;*blue*&quot; =&gt; FALSE"/>
             <entry key="3" type="xstring" value="// TRUE =&gt; TRUE"/>
-            <entry key="4" type="xstring" value="$Size$ &lt; 10 =&gt; FALSE"/>
+            <entry key="4" type="xstring" value="$Size$ &lt; 24000 =&gt; FALSE"/>
             <entry key="5" type="xstring" value="TRUE =&gt; TRUE"/>
         </config>
         <entry key="new-column-name" type="xstring" value=""/>
@@ -61,12 +61,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 3436, Cols: 10"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3434, Cols: 10"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="7c5f006d-8e84-4382-871f-e0a4c7d73ea2"/>
+        <entry key="file_store_id" type="xstring" value="dd3969cf-fb7e-4025-a2b2-9622989683d6"/>
     </config>
 </config>
