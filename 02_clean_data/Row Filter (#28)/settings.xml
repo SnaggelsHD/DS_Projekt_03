@@ -19,6 +19,17 @@
                     <entry key="inputKind" type="xstring" value="SINGLE"/>
                 </config>
             </config>
+            <config key="1">
+                <config key="columnV2">
+                    <entry key="regularChoice" type="xstring" value="vehicle_type_id"/>
+                    <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
+                </config>
+                <entry key="operator" type="xstring" value="IS_NOT_MISSING"/>
+                <config key="predicateValues">
+                    <config key="values"/>
+                    <entry key="inputKind" type="xstring" value="SINGLE"/>
+                </config>
+            </config>
         </config>
         <entry key="domains" type="xstring" value="RETAIN"/>
         <entry key="outputMode" type="xstring" value="MATCHING"/>
