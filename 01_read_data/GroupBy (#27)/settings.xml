@@ -12,19 +12,17 @@
         </config>
         <config key="grouByColumns">
             <config key="InclList">
-                <entry key="array-size" type="xint" value="2"/>
-                <entry key="0" type="xstring" value="timestamp"/>
-                <entry key="1" type="xstring" value="station_id"/>
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="station_id"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="7"/>
-                <entry key="0" type="xstring" value="num_bikes_available"/>
-                <entry key="1" type="xstring" value="is_renting"/>
-                <entry key="2" type="xstring" value="is_returning"/>
-                <entry key="3" type="xstring" value="is_installed"/>
-                <entry key="4" type="xstring" value="last_reported"/>
-                <entry key="5" type="xstring" value="vehicle_type_id"/>
-                <entry key="6" type="xstring" value="vehicle_count"/>
+                <entry key="array-size" type="xint" value="6"/>
+                <entry key="0" type="xstring" value="timestamp"/>
+                <entry key="1" type="xstring" value="num_bikes_available"/>
+                <entry key="2" type="xstring" value="vehicle_type_id"/>
+                <entry key="3" type="xstring" value="vehicle_count"/>
+                <entry key="4" type="xstring" value="is_renting"/>
+                <entry key="5" type="xstring" value="is_returning"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
@@ -55,23 +53,16 @@
         <entry key="columnNamePolicy" type="xstring" value="Aggregation method (column name)"/>
         <config key="aggregationColumn">
             <config key="columnNames">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="num_bikes_available"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <config key="columnTypes">
-                <entry key="array-size" type="xint" value="1"/>
-                <config key="0">
-                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
-                    <entry key="is_null" type="xboolean" value="false"/>
-                </config>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <config key="aggregationMethod">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="Maximum"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
             <config key="inclMissingVals">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xboolean" value="false"/>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
         </config>
         <config key="aggregationOperatorSettings"/>
