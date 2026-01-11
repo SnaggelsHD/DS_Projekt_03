@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="columnsToInclude">
+            <entry key="mode" type="xstring" value="MANUAL"/>
+            <config key="patternFilter">
+                <entry key="pattern" type="xstring" value="davis_solar_radiation_(W/m^2)"/>
+                <entry key="isCaseSensitive" type="xboolean" value="false"/>
+                <entry key="isInverted" type="xboolean" value="false"/>
+            </config>
+            <config key="manualFilter">
+                <config key="manuallySelected">
+                    <entry key="array-size" type="xint" value="61"/>
+                    <entry key="0" type="xstring" value="date_time_ET"/>
+                    <entry key="1" type="xstring" value="eccc_uv_index(-24)"/>
+                    <entry key="2" type="xstring" value="eccc_weather_conditions_embedded_pca (#8)(-24)"/>
+                    <entry key="3" type="xstring" value="eccc_weather_conditions_embedded_pca (#9)(-24)"/>
+                    <entry key="4" type="xstring" value="eccc_weather_conditions_embedded_pca (#10)(-24)"/>
+                    <entry key="5" type="xstring" value="eccc_weather_conditions_embedded_pca (#11)(-24)"/>
+                    <entry key="6" type="xstring" value="eccc_weather_conditions_embedded_pca (#12)(-24)"/>
+                    <entry key="7" type="xstring" value="eccc_weather_conditions_embedded_pca (#13)(-24)"/>
+                    <entry key="8" type="xstring" value="eccc_weather_conditions_embedded_pca (#14)(-24)"/>
+                    <entry key="9" type="xstring" value="eccc_weather_conditions_embedded_pca (#15)(-24)"/>
+                    <entry key="10" type="xstring" value="eccc_weather_conditions_embedded_pca (#16)(-24)"/>
+                    <entry key="11" type="xstring" value="eccc_weather_conditions_embedded_pca (#17)(-24)"/>
+                    <entry key="12" type="xstring" value="eccc_weather_conditions_embedded_pca (#18)(-24)"/>
+                    <entry key="13" type="xstring" value="eccc_weather_conditions_embedded_pca (#19)(-24)"/>
+                    <entry key="14" type="xstring" value="eccc_weather_conditions_embedded_pca (#20)(-24)"/>
+                    <entry key="15" type="xstring" value="eccc_weather_conditions_embedded_pca (#21)(-24)"/>
+                    <entry key="16" type="xstring" value="eccc_temp_(°C)(-24)"/>
+                    <entry key="17" type="xstring" value="eccc_likelihood_of_precip _(%)(-24)"/>
+                    <entry key="18" type="xstring" value="eccc_wind_speed(-24)"/>
+                    <entry key="19" type="xstring" value="eccc_wind_gust(-24)"/>
+                    <entry key="20" type="xstring" value="eccc_uv_index_missing_indicator(-24)"/>
+                    <entry key="21" type="xstring" value="eccc_wind_chill_missing_indicator(-24)"/>
+                    <entry key="22" type="xstring" value="eccc_humidex_missing_indicator(-24)"/>
+                    <entry key="23" type="xstring" value="eccc_wind_gust_missing_indicator(-24)"/>
+                    <entry key="24" type="xstring" value="eccc_sin_wind_direction(-24)"/>
+                    <entry key="25" type="xstring" value="eccc_cos_wind_direction(-24)"/>
+                    <entry key="26" type="xstring" value="eccc_wind_direction_missing_indicator(-24)"/>
+                    <entry key="27" type="xstring" value="eccc_weather_conditions_embedded_pca(-24)"/>
+                    <entry key="28" type="xstring" value="eccc_weather_conditions_embedded_pca (#1)(-24)"/>
+                    <entry key="29" type="xstring" value="eccc_weather_conditions_embedded_pca (#2)(-24)"/>
+                    <entry key="30" type="xstring" value="eccc_weather_conditions_embedded_pca (#3)(-24)"/>
+                    <entry key="31" type="xstring" value="eccc_weather_conditions_embedded_pca (#4)(-24)"/>
+                    <entry key="32" type="xstring" value="eccc_weather_conditions_embedded_pca (#5)(-24)"/>
+                    <entry key="33" type="xstring" value="eccc_weather_conditions_embedded_pca (#6)(-24)"/>
+                    <entry key="34" type="xstring" value="eccc_weather_conditions_embedded_pca (#7)(-24)"/>
+                    <entry key="35" type="xstring" value="davis_rain_since_midnight_(mm)"/>
+                    <entry key="36" type="xstring" value="davis_ET_(mm)"/>
+                    <entry key="37" type="xstring" value="davis_sun_hours"/>
+                    <entry key="38" type="xstring" value="davis_temp_(C)"/>
+                    <entry key="39" type="xstring" value="davis_humidity"/>
+                    <entry key="40" type="xstring" value="davis_dew_point_(C)"/>
+                    <entry key="41" type="xstring" value="davis_rainfall_rate_(mm/hr)"/>
+                    <entry key="42" type="xstring" value="davis_sea_level_pressure_(hPa)"/>
+                    <entry key="43" type="xstring" value="davis_inside_temp_(C)"/>
+                    <entry key="44" type="xstring" value="davis_inside_humidity"/>
+                    <entry key="45" type="xstring" value="davis_UV_index"/>
+                    <entry key="46" type="xstring" value="sin_davis_average_wind_bearing_(deg)"/>
+                    <entry key="47" type="xstring" value="cos_davis_average_wind_bearing_(deg)"/>
+                    <entry key="48" type="xstring" value="davis_recent_high_gust_(km/h)"/>
+                    <entry key="49" type="xstring" value="davis_current_gust_(km/h)"/>
+                    <entry key="50" type="xstring" value="davis_wind_speed_max_(km/h)"/>
+                    <entry key="51" type="xstring" value="davis_max_solar_radiation_(W/m^2)"/>
+                    <entry key="52" type="xstring" value="davis_solar_radiation_(W/m^2)"/>
+                    <entry key="53" type="xstring" value="davis_apparent_elevation"/>
+                    <entry key="54" type="xstring" value="davis_is_daylight"/>
+                    <entry key="55" type="xstring" value="Month (Number)"/>
+                    <entry key="56" type="xstring" value="Week"/>
+                    <entry key="57" type="xstring" value="Day of Year"/>
+                    <entry key="58" type="xstring" value="Day of Month"/>
+                    <entry key="59" type="xstring" value="Day of Week (Number)"/>
+                    <entry key="60" type="xstring" value="Hour"/>
+                </config>
+                <config key="manuallyDeselected">
+                    <entry key="array-size" type="xint" value="61"/>
+                    <entry key="0" type="xstring" value="date_time_ET"/>
+                    <entry key="1" type="xstring" value="eccc_uv_index(-24)"/>
+                    <entry key="2" type="xstring" value="eccc_weather_conditions_embedded_pca (#8)(-24)"/>
+                    <entry key="3" type="xstring" value="eccc_weather_conditions_embedded_pca (#9)(-24)"/>
+                    <entry key="4" type="xstring" value="eccc_weather_conditions_embedded_pca (#10)(-24)"/>
+                    <entry key="5" type="xstring" value="eccc_weather_conditions_embedded_pca (#11)(-24)"/>
+                    <entry key="6" type="xstring" value="eccc_weather_conditions_embedded_pca (#12)(-24)"/>
+                    <entry key="7" type="xstring" value="eccc_weather_conditions_embedded_pca (#13)(-24)"/>
+                    <entry key="8" type="xstring" value="eccc_weather_conditions_embedded_pca (#14)(-24)"/>
+                    <entry key="9" type="xstring" value="eccc_weather_conditions_embedded_pca (#15)(-24)"/>
+                    <entry key="10" type="xstring" value="eccc_weather_conditions_embedded_pca (#16)(-24)"/>
+                    <entry key="11" type="xstring" value="eccc_weather_conditions_embedded_pca (#17)(-24)"/>
+                    <entry key="12" type="xstring" value="eccc_weather_conditions_embedded_pca (#18)(-24)"/>
+                    <entry key="13" type="xstring" value="eccc_weather_conditions_embedded_pca (#19)(-24)"/>
+                    <entry key="14" type="xstring" value="eccc_weather_conditions_embedded_pca (#20)(-24)"/>
+                    <entry key="15" type="xstring" value="eccc_weather_conditions_embedded_pca (#21)(-24)"/>
+                    <entry key="16" type="xstring" value="eccc_temp_(°C)(-24)"/>
+                    <entry key="17" type="xstring" value="eccc_likelihood_of_precip _(%)(-24)"/>
+                    <entry key="18" type="xstring" value="eccc_wind_speed(-24)"/>
+                    <entry key="19" type="xstring" value="eccc_wind_gust(-24)"/>
+                    <entry key="20" type="xstring" value="eccc_uv_index_missing_indicator(-24)"/>
+                    <entry key="21" type="xstring" value="eccc_wind_chill_missing_indicator(-24)"/>
+                    <entry key="22" type="xstring" value="eccc_humidex_missing_indicator(-24)"/>
+                    <entry key="23" type="xstring" value="eccc_wind_gust_missing_indicator(-24)"/>
+                    <entry key="24" type="xstring" value="eccc_sin_wind_direction(-24)"/>
+                    <entry key="25" type="xstring" value="eccc_cos_wind_direction(-24)"/>
+                    <entry key="26" type="xstring" value="eccc_wind_direction_missing_indicator(-24)"/>
+                    <entry key="27" type="xstring" value="eccc_weather_conditions_embedded_pca(-24)"/>
+                    <entry key="28" type="xstring" value="eccc_weather_conditions_embedded_pca (#1)(-24)"/>
+                    <entry key="29" type="xstring" value="eccc_weather_conditions_embedded_pca (#2)(-24)"/>
+                    <entry key="30" type="xstring" value="eccc_weather_conditions_embedded_pca (#3)(-24)"/>
+                    <entry key="31" type="xstring" value="eccc_weather_conditions_embedded_pca (#4)(-24)"/>
+                    <entry key="32" type="xstring" value="eccc_weather_conditions_embedded_pca (#5)(-24)"/>
+                    <entry key="33" type="xstring" value="eccc_weather_conditions_embedded_pca (#6)(-24)"/>
+                    <entry key="34" type="xstring" value="eccc_weather_conditions_embedded_pca (#7)(-24)"/>
+                    <entry key="35" type="xstring" value="davis_rain_since_midnight_(mm)"/>
+                    <entry key="36" type="xstring" value="davis_ET_(mm)"/>
+                    <entry key="37" type="xstring" value="davis_sun_hours"/>
+                    <entry key="38" type="xstring" value="davis_temp_(C)"/>
+                    <entry key="39" type="xstring" value="davis_humidity"/>
+                    <entry key="40" type="xstring" value="davis_dew_point_(C)"/>
+                    <entry key="41" type="xstring" value="davis_rainfall_rate_(mm/hr)"/>
+                    <entry key="42" type="xstring" value="davis_sea_level_pressure_(hPa)"/>
+                    <entry key="43" type="xstring" value="davis_inside_temp_(C)"/>
+                    <entry key="44" type="xstring" value="davis_inside_humidity"/>
+                    <entry key="45" type="xstring" value="davis_UV_index"/>
+                    <entry key="46" type="xstring" value="sin_davis_average_wind_bearing_(deg)"/>
+                    <entry key="47" type="xstring" value="cos_davis_average_wind_bearing_(deg)"/>
+                    <entry key="48" type="xstring" value="davis_recent_high_gust_(km/h)"/>
+                    <entry key="49" type="xstring" value="davis_current_gust_(km/h)"/>
+                    <entry key="50" type="xstring" value="davis_wind_speed_max_(km/h)"/>
+                    <entry key="51" type="xstring" value="davis_max_solar_radiation_(W/m^2)"/>
+                    <entry key="52" type="xstring" value="davis_solar_radiation_(W/m^2)"/>
+                    <entry key="53" type="xstring" value="davis_apparent_elevation"/>
+                    <entry key="54" type="xstring" value="davis_is_daylight"/>
+                    <entry key="55" type="xstring" value="Month (Number)"/>
+                    <entry key="56" type="xstring" value="Week"/>
+                    <entry key="57" type="xstring" value="Day of Year"/>
+                    <entry key="58" type="xstring" value="Day of Month"/>
+                    <entry key="59" type="xstring" value="Day of Week (Number)"/>
+                    <entry key="60" type="xstring" value="Hour"/>
+                </config>
+                <entry key="includeUnknownColumns" type="xboolean" value="false"/>
+            </config>
+            <config key="typeFilter">
+                <config key="selectedTypes">
+                    <entry key="array-size" type="xint" value="0"/>
+                </config>
+            </config>
+        </config>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="columnsToInclude">
+                <config key="manualFilter">
+                    <config key="manuallySelected">
+                        <entry key="used_variable" type="xstring" value="column-selection"/>
+                        <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                        <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+                    </config>
+                </config>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.split3.ColumnSplitNodeFactory3"/>
+    <entry key="node-name" type="xstring" value="Column Splitter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511140634"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Splitter"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
