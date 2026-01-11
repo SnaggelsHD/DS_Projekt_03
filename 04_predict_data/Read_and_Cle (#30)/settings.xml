@@ -23,11 +23,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Contains one node with execution failure (Read_Data #27)"/>
-        <entry key="issue" type="xstring" value="Read_Data #27: One node with warning (JSON Reader #17)"/>
-    </config>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="1"/>
     <config key="inports"/>
