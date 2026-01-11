@@ -56,7 +56,7 @@
             <entry key="3" type="xstring" value="Boolean"/>
             <entry key="4" type="xstring" value="Boolean"/>
             <entry key="5" type="xstring" value="Json"/>
-            <entry key="6" type="xstring" value="String"/>
+            <entry key="6" type="xstring" value="Integer"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>

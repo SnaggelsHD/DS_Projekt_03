@@ -17,6 +17,14 @@
             </config>
             <config key="1">
                 <config key="columnV2">
+                    <entry key="regularChoice" type="xstring" value="vehicle_type_id"/>
+                    <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
+                </config>
+                <entry key="sortingOrder" type="xstring" value="ASCENDING"/>
+                <entry key="stringComparison" type="xstring" value="NATURAL"/>
+            </config>
+            <config key="2">
+                <config key="columnV2">
                     <entry key="regularChoice" type="xstring" value="timestamp"/>
                     <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
                 </config>

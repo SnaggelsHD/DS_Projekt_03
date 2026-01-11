@@ -12,19 +12,19 @@
         </config>
         <config key="grouByColumns">
             <config key="InclList">
-                <entry key="array-size" type="xint" value="2"/>
+                <entry key="array-size" type="xint" value="3"/>
                 <entry key="0" type="xstring" value="timestamp"/>
                 <entry key="1" type="xstring" value="station_id"/>
+                <entry key="2" type="xstring" value="vehicle_type_id"/>
             </config>
             <config key="ExclList">
-                <entry key="array-size" type="xint" value="7"/>
+                <entry key="array-size" type="xint" value="6"/>
                 <entry key="0" type="xstring" value="num_bikes_available"/>
                 <entry key="1" type="xstring" value="is_renting"/>
                 <entry key="2" type="xstring" value="is_returning"/>
                 <entry key="3" type="xstring" value="is_installed"/>
                 <entry key="4" type="xstring" value="last_reported"/>
-                <entry key="5" type="xstring" value="vehicle_type_id"/>
-                <entry key="6" type="xstring" value="vehicle_count"/>
+                <entry key="5" type="xstring" value="vehicle_count"/>
             </config>
             <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
