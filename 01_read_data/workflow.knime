@@ -8,10 +8,10 @@
         <entry key="authored-by" type="xstring" value="Snaggels"/>
         <entry key="authored-when" type="xstring" value="2025-12-31 06:09:27 +0100"/>
         <entry key="lastEdited-by" type="xstring" value="Snaggels"/>
-        <entry key="lastEdited-when" type="xstring" value="2026-01-15 20:45:46 +0100"/>
+        <entry key="lastEdited-when" type="xstring" value="2026-01-15 20:52:26 +0100"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_1">

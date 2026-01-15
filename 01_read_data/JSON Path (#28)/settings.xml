@@ -6,57 +6,27 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="input.column" type="xstring" value="stations_json"/>
+        <entry key="input.column" type="xstring" value="json"/>
         <entry key="remove.input.column" type="xboolean" value="false"/>
         <config key="newColumnName">
-            <entry key="array-size" type="xint" value="7"/>
-            <entry key="0" type="xstring" value="station_id"/>
-            <entry key="1" type="xstring" value="num_bikes_available"/>
-            <entry key="2" type="xstring" value="is_renting"/>
-            <entry key="3" type="xstring" value="is_returning"/>
-            <entry key="4" type="xstring" value="is_installed"/>
-            <entry key="5" type="xstring" value="vehicle_types_json"/>
-            <entry key="6" type="xstring" value="last_reported"/>
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="stations_json"/>
         </config>
         <config key="jsonpath">
-            <entry key="array-size" type="xint" value="7"/>
-            <entry key="0" type="xstring" value="$.station_id"/>
-            <entry key="1" type="xstring" value="$.num_bikes_available"/>
-            <entry key="2" type="xstring" value="$.is_renting"/>
-            <entry key="3" type="xstring" value="$.is_returning"/>
-            <entry key="4" type="xstring" value="$.is_installed"/>
-            <entry key="5" type="xstring" value="$.vehicle_types_available[*]"/>
-            <entry key="6" type="xstring" value="$.last_reported"/>
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="$.data.stations[*]"/>
         </config>
         <config key="result.is.list">
-            <entry key="array-size" type="xint" value="7"/>
-            <entry key="0" type="xboolean" value="false"/>
-            <entry key="1" type="xboolean" value="false"/>
-            <entry key="2" type="xboolean" value="false"/>
-            <entry key="3" type="xboolean" value="false"/>
-            <entry key="4" type="xboolean" value="false"/>
-            <entry key="5" type="xboolean" value="true"/>
-            <entry key="6" type="xboolean" value="false"/>
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xboolean" value="true"/>
         </config>
         <config key="return.paths.instead.of.values">
-            <entry key="array-size" type="xint" value="7"/>
+            <entry key="array-size" type="xint" value="1"/>
             <entry key="0" type="xboolean" value="false"/>
-            <entry key="1" type="xboolean" value="false"/>
-            <entry key="2" type="xboolean" value="false"/>
-            <entry key="3" type="xboolean" value="false"/>
-            <entry key="4" type="xboolean" value="false"/>
-            <entry key="5" type="xboolean" value="false"/>
-            <entry key="6" type="xboolean" value="false"/>
         </config>
         <config key="returnType">
-            <entry key="array-size" type="xint" value="7"/>
-            <entry key="0" type="xstring" value="String"/>
-            <entry key="1" type="xstring" value="Integer"/>
-            <entry key="2" type="xstring" value="Boolean"/>
-            <entry key="3" type="xstring" value="Boolean"/>
-            <entry key="4" type="xstring" value="Boolean"/>
-            <entry key="5" type="xstring" value="Json"/>
-            <entry key="6" type="xstring" value="Integer"/>
+            <entry key="array-size" type="xint" value="1"/>
+            <entry key="0" type="xstring" value="Json"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -80,12 +50,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1167355, Cols: 15"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 3434, Cols: 8"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="a1c04578-3802-4c4e-a0e5-c7230de9e662"/>
+        <entry key="file_store_id" type="xstring" value="69fa7ebd-4dbf-4c9a-bb33-b6fb20454481"/>
     </config>
 </config>
