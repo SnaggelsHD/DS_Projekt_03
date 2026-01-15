@@ -27,7 +27,7 @@
                     <entry key="location_present" type="xboolean" value="true"/>
                     <entry key="file_system_type" type="xstring" value="RELATIVE"/>
                     <entry key="file_system_specifier" type="xstring" value="knime.workflow"/>
-                    <entry key="path" type="xstring" value="../Aufgabe2-ergebnis.table"/>
+                    <entry key="path" type="xstring" value="../Aufgabe_02_station_status.table"/>
                 </config>
                 <config key="filter_mode_Internals">
                     <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -61,7 +61,7 @@
         <config key="table_spec_config_Internals">
             <entry key="version" type="xstring" value="V4_4"/>
             <config key="individual_specs">
-                <config key="../Aufgabe2-ergebnis.table">
+                <config key="../Aufgabe_02_station_status.table">
                     <entry key="num_columns" type="xint" value="9"/>
                     <config key="0">
                         <entry key="name" type="xstring" value="timestamp"/>
@@ -459,7 +459,7 @@
                     <entry key="force_type" type="xboolean" value="false"/>
                 </config>
             </config>
-            <entry key="source_group_id" type="xstring" value="../Aufgabe2-ergebnis.table"/>
+            <entry key="source_group_id" type="xstring" value="../Aufgabe_02_station_status.table"/>
             <config key="config_id">
                 <config key="table_reader"/>
             </config>
@@ -522,6 +522,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="cf1541b8-cc52-43b8-9db3-236d7a99d262"/>
+        <entry key="file_store_id" type="xstring" value="163d3ad3-c91c-443a-a3f2-e858a73972a0"/>
     </config>
 </config>
