@@ -9,7 +9,7 @@
         <entry key="input.column" type="xstring" value="stations_json"/>
         <entry key="remove.input.column" type="xboolean" value="false"/>
         <config key="newColumnName">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xstring" value="station_id"/>
             <entry key="1" type="xstring" value="name"/>
             <entry key="2" type="xstring" value="lat"/>
@@ -18,9 +18,10 @@
             <entry key="5" type="xstring" value="post_code"/>
             <entry key="6" type="xstring" value="rental_methods"/>
             <entry key="7" type="xstring" value="is_charging_station"/>
+            <entry key="8" type="xstring" value="names"/>
         </config>
         <config key="jsonpath">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xstring" value="$.station_id"/>
             <entry key="1" type="xstring" value="$.name"/>
             <entry key="2" type="xstring" value="$.lat"/>
@@ -29,9 +30,10 @@
             <entry key="5" type="xstring" value="$.post_code"/>
             <entry key="6" type="xstring" value="$.rental_methods[*]"/>
             <entry key="7" type="xstring" value="$.is_charging_station"/>
+            <entry key="8" type="xstring" value="$.names"/>
         </config>
         <config key="result.is.list">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xboolean" value="false"/>
             <entry key="1" type="xboolean" value="false"/>
             <entry key="2" type="xboolean" value="false"/>
@@ -40,9 +42,10 @@
             <entry key="5" type="xboolean" value="false"/>
             <entry key="6" type="xboolean" value="true"/>
             <entry key="7" type="xboolean" value="false"/>
+            <entry key="8" type="xboolean" value="false"/>
         </config>
         <config key="return.paths.instead.of.values">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xboolean" value="false"/>
             <entry key="1" type="xboolean" value="false"/>
             <entry key="2" type="xboolean" value="false"/>
@@ -51,9 +54,10 @@
             <entry key="5" type="xboolean" value="false"/>
             <entry key="6" type="xboolean" value="false"/>
             <entry key="7" type="xboolean" value="false"/>
+            <entry key="8" type="xboolean" value="false"/>
         </config>
         <config key="returnType">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xstring" value="String"/>
             <entry key="1" type="xstring" value="String"/>
             <entry key="2" type="xstring" value="Double"/>
@@ -62,6 +66,7 @@
             <entry key="5" type="xstring" value="Integer"/>
             <entry key="6" type="xstring" value="String"/>
             <entry key="7" type="xstring" value="Boolean"/>
+            <entry key="8" type="xstring" value="String"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -85,12 +90,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 386, Cols: 10"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 386, Cols: 11"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="b12f2367-92a1-46a3-89fe-fa6f760bce28"/>
+        <entry key="file_store_id" type="xstring" value="853e217e-77d6-4884-949b-fb24c9f4c16b"/>
     </config>
 </config>

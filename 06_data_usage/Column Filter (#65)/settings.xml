@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="column-filter">
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="4"/>
+                <entry key="0" type="xstring" value="name"/>
+                <entry key="1" type="xstring" value="hasCarRental"/>
+                <entry key="2" type="xstring" value="city"/>
+                <entry key="3" type="xstring" value="coordinates"/>
+            </config>
+            <config key="excluded_names">
+                <entry key="array-size" type="xint" value="157"/>
+                <entry key="0" type="xstring" value="Status"/>
+                <entry key="1" type="xstring" value="Content type"/>
+                <entry key="2" type="xstring" value="body"/>
+                <entry key="3" type="xstring" value="number"/>
+                <entry key="4" type="xstring" value="ifopt"/>
+                <entry key="5" type="xstring" value="category"/>
+                <entry key="6" type="xstring" value="priceCategory"/>
+                <entry key="7" type="xstring" value="hasParking"/>
+                <entry key="8" type="xstring" value="hasBicycleParking"/>
+                <entry key="9" type="xstring" value="hasLocalPublicTransport"/>
+                <entry key="10" type="xstring" value="hasPublicFacilities"/>
+                <entry key="11" type="xstring" value="hasLockerSystem"/>
+                <entry key="12" type="xstring" value="hasTaxiRank"/>
+                <entry key="13" type="xstring" value="hasTravelNecessities"/>
+                <entry key="14" type="xstring" value="hasSteplessAccess"/>
+                <entry key="15" type="xstring" value="hasMobilityService"/>
+                <entry key="16" type="xstring" value="hasWiFi"/>
+                <entry key="17" type="xstring" value="hasTravelCenter"/>
+                <entry key="18" type="xstring" value="hasRailwayMission"/>
+                <entry key="19" type="xstring" value="hasDBLounge"/>
+                <entry key="20" type="xstring" value="hasLostAndFound"/>
+                <entry key="21" type="xstring" value="federalState"/>
+                <entry key="22" type="xstring" value="federalStateCode"/>
+                <entry key="23" type="xstring" value="countryCode"/>
+                <entry key="24" type="xstring" value="municipalityCode"/>
+                <entry key="25" type="xstring" value="wirelessLan"/>
+                <entry key="26" type="xstring" value="zipcode"/>
+                <entry key="27" type="xstring" value="street"/>
+                <entry key="28" type="xstring" value="number (#1)"/>
+                <entry key="29" type="xstring" value="name (#1)"/>
+                <entry key="30" type="xstring" value="shortName"/>
+                <entry key="31" type="xstring" value="shortName (#1)"/>
+                <entry key="32" type="xstring" value="name (#2)"/>
+                <entry key="33" type="xstring" value="fromTime"/>
+                <entry key="34" type="xstring" value="toTime"/>
+                <entry key="35" type="xstring" value="fromTime (#1)"/>
+                <entry key="36" type="xstring" value="toTime (#1)"/>
+                <entry key="37" type="xstring" value="fromTime (#2)"/>
+                <entry key="38" type="xstring" value="toTime (#2)"/>
+                <entry key="39" type="xstring" value="fromTime (#3)"/>
+                <entry key="40" type="xstring" value="toTime (#3)"/>
+                <entry key="41" type="xstring" value="fromTime (#4)"/>
+                <entry key="42" type="xstring" value="toTime (#4)"/>
+                <entry key="43" type="xstring" value="fromTime (#5)"/>
+                <entry key="44" type="xstring" value="toTime (#5)"/>
+                <entry key="45" type="xstring" value="fromTime (#6)"/>
+                <entry key="46" type="xstring" value="toTime (#6)"/>
+                <entry key="47" type="xstring" value="fromTime (#7)"/>
+                <entry key="48" type="xstring" value="toTime (#7)"/>
+                <entry key="49" type="xstring" value="staffOnSite"/>
+                <entry key="50" type="xstring" value="serviceOnBehalf"/>
+                <entry key="51" type="xstring" value="meetingPoint"/>
+                <entry key="52" type="xstring" value="fromTime (#8)"/>
+                <entry key="53" type="xstring" value="toTime (#8)"/>
+                <entry key="54" type="xstring" value="fromTime (#9)"/>
+                <entry key="55" type="xstring" value="toTime (#9)"/>
+                <entry key="56" type="xstring" value="fromTime (#10)"/>
+                <entry key="57" type="xstring" value="toTime (#10)"/>
+                <entry key="58" type="xstring" value="fromTime (#11)"/>
+                <entry key="59" type="xstring" value="toTime (#11)"/>
+                <entry key="60" type="xstring" value="fromTime (#12)"/>
+                <entry key="61" type="xstring" value="toTime (#12)"/>
+                <entry key="62" type="xstring" value="fromTime (#13)"/>
+                <entry key="63" type="xstring" value="toTime (#13)"/>
+                <entry key="64" type="xstring" value="fromTime (#14)"/>
+                <entry key="65" type="xstring" value="toTime (#14)"/>
+                <entry key="66" type="xstring" value="email"/>
+                <entry key="67" type="xstring" value="name (#3)"/>
+                <entry key="68" type="xstring" value="number (#2)"/>
+                <entry key="69" type="xstring" value="publicPhoneNumber"/>
+                <entry key="70" type="xstring" value="name (#4)"/>
+                <entry key="71" type="xstring" value="number (#3)"/>
+                <entry key="72" type="xstring" value="name (#5)"/>
+                <entry key="73" type="xstring" value="number (#4)"/>
+                <entry key="74" type="xstring" value="isMain"/>
+                <entry key="75" type="xstring" value="type"/>
+                <entry key="76" type="xstring" value="rilIdentifier"/>
+                <entry key="77" type="xstring" value="isMain (#1)"/>
+                <entry key="78" type="xstring" value="hasSteamPermission"/>
+                <entry key="79" type="xstring" value="steamPermission"/>
+                <entry key="80" type="xstring" value="primaryLocationCode"/>
+                <entry key="81" type="xstring" value="type (#1)"/>
+                <entry key="82" type="xstring" value="coordinates (#1)"/>
+                <entry key="83" type="xstring" value="productLine"/>
+                <entry key="84" type="xstring" value="segment"/>
+                <entry key="85" type="xstring" value="rilIdentifier (#1)"/>
+                <entry key="86" type="xstring" value="isMain (#2)"/>
+                <entry key="87" type="xstring" value="hasSteamPermission (#1)"/>
+                <entry key="88" type="xstring" value="steamPermission (#1)"/>
+                <entry key="89" type="xstring" value="primaryLocationCode (#1)"/>
+                <entry key="90" type="xstring" value="type (#2)"/>
+                <entry key="91" type="xstring" value="coordinates (#2)"/>
+                <entry key="92" type="xstring" value="fromTime (#15)"/>
+                <entry key="93" type="xstring" value="toTime (#15)"/>
+                <entry key="94" type="xstring" value="fromTime (#16)"/>
+                <entry key="95" type="xstring" value="toTime (#16)"/>
+                <entry key="96" type="xstring" value="fromTime (#17)"/>
+                <entry key="97" type="xstring" value="toTime (#17)"/>
+                <entry key="98" type="xstring" value="fromTime (#18)"/>
+                <entry key="99" type="xstring" value="toTime (#18)"/>
+                <entry key="100" type="xstring" value="fromTime (#19)"/>
+                <entry key="101" type="xstring" value="toTime (#19)"/>
+                <entry key="102" type="xstring" value="fromTime (#20)"/>
+                <entry key="103" type="xstring" value="toTime (#20)"/>
+                <entry key="104" type="xstring" value="fromTime (#21)"/>
+                <entry key="105" type="xstring" value="toTime (#21)"/>
+                <entry key="106" type="xstring" value="number (#5)"/>
+                <entry key="107" type="xstring" value="isMain (#3)"/>
+                <entry key="108" type="xstring" value="type (#3)"/>
+                <entry key="109" type="xstring" value="coordinates (#3)"/>
+                <entry key="110" type="xstring" value="fromTime (#22)"/>
+                <entry key="111" type="xstring" value="toTime (#22)"/>
+                <entry key="112" type="xstring" value="fromTime (#23)"/>
+                <entry key="113" type="xstring" value="toTime (#23)"/>
+                <entry key="114" type="xstring" value="fromTime (#24)"/>
+                <entry key="115" type="xstring" value="toTime (#24)"/>
+                <entry key="116" type="xstring" value="fromTime (#25)"/>
+                <entry key="117" type="xstring" value="toTime (#25)"/>
+                <entry key="118" type="xstring" value="fromTime (#26)"/>
+                <entry key="119" type="xstring" value="toTime (#26)"/>
+                <entry key="120" type="xstring" value="fromTime (#27)"/>
+                <entry key="121" type="xstring" value="toTime (#27)"/>
+                <entry key="122" type="xstring" value="fromTime (#28)"/>
+                <entry key="123" type="xstring" value="toTime (#28)"/>
+                <entry key="124" type="xstring" value="fromTime (#29)"/>
+                <entry key="125" type="xstring" value="toTime (#29)"/>
+                <entry key="126" type="xstring" value="rilIdentifier (#2)"/>
+                <entry key="127" type="xstring" value="isMain (#4)"/>
+                <entry key="128" type="xstring" value="hasSteamPermission (#2)"/>
+                <entry key="129" type="xstring" value="steamPermission (#2)"/>
+                <entry key="130" type="xstring" value="primaryLocationCode (#2)"/>
+                <entry key="131" type="xstring" value="type (#4)"/>
+                <entry key="132" type="xstring" value="coordinates (#4)"/>
+                <entry key="133" type="xstring" value="number (#6)"/>
+                <entry key="134" type="xstring" value="isMain (#5)"/>
+                <entry key="135" type="xstring" value="type (#5)"/>
+                <entry key="136" type="xstring" value="coordinates (#5)"/>
+                <entry key="137" type="xstring" value="rilIdentifier (#3)"/>
+                <entry key="138" type="xstring" value="isMain (#6)"/>
+                <entry key="139" type="xstring" value="hasSteamPermission (#3)"/>
+                <entry key="140" type="xstring" value="steamPermission (#3)"/>
+                <entry key="141" type="xstring" value="primaryLocationCode (#3)"/>
+                <entry key="142" type="xstring" value="type (#6)"/>
+                <entry key="143" type="xstring" value="coordinates (#6)"/>
+                <entry key="144" type="xstring" value="rilIdentifier (#4)"/>
+                <entry key="145" type="xstring" value="isMain (#7)"/>
+                <entry key="146" type="xstring" value="hasSteamPermission (#4)"/>
+                <entry key="147" type="xstring" value="steamPermission (#4)"/>
+                <entry key="148" type="xstring" value="primaryLocationCode (#4)"/>
+                <entry key="149" type="xstring" value="number (#7)"/>
+                <entry key="150" type="xstring" value="isMain (#8)"/>
+                <entry key="151" type="xstring" value="type (#7)"/>
+                <entry key="152" type="xstring" value="coordinates (#7)"/>
+                <entry key="153" type="xstring" value="installDate"/>
+                <entry key="154" type="xstring" value="type (#8)"/>
+                <entry key="155" type="xstring" value="coordinates (#8)"/>
+                <entry key="156" type="xstring" value="evaNumbers"/>
+            </config>
+            <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist"/>
+            </config>
+        </config>
+    </config>
+    <config key="variables"/>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Filter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511140634"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Filter"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
