@@ -13,7 +13,7 @@
                 <entry key="0" type="xstring" value="station_id"/>
                 <entry key="1" type="xstring" value="total_rents"/>
                 <entry key="2" type="xstring" value="name"/>
-                <entry key="3" type="xstring" value="Bahnhofsnah_Name"/>
+                <entry key="3" type="xstring" value="Bahnhofsnah"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="10"/>
@@ -25,8 +25,8 @@
                 <entry key="5" type="xstring" value="lon"/>
                 <entry key="6" type="xstring" value="address"/>
                 <entry key="7" type="xstring" value="post_code"/>
-                <entry key="8" type="xstring" value="is_charging_station"/>
-                <entry key="9" type="xstring" value="rental_methods"/>
+                <entry key="8" type="xstring" value="rental_methods"/>
+                <entry key="9" type="xstring" value="is_charging_station"/>
             </config>
             <entry key="enforce_option" type="xstring" value="EnforceInclusion"/>
             <config key="name_pattern">
@@ -42,7 +42,7 @@
     </config>
     <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
     <entry key="node-name" type="xstring" value="Column Filter"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -55,16 +55,19 @@
     <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Filter"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 364, Cols: 4"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="e4141dfa-af74-443a-9e67-802d8a1004a3"/>
     </config>
 </config>
