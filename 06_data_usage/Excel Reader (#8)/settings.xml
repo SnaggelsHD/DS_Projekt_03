@@ -15,8 +15,8 @@
                 <config key="file_system_chooser__Internals">
                     <entry key="has_fs_port" type="xboolean" value="false"/>
                     <entry key="overwritten_by_variable" type="xboolean" value="false"/>
-                    <entry key="convenience_fs_category" type="xstring" value="LOCAL"/>
-                    <entry key="relative_to" type="xstring" value="knime.workflow.data"/>
+                    <entry key="convenience_fs_category" type="xstring" value="RELATIVE"/>
+                    <entry key="relative_to" type="xstring" value="knime.workflow"/>
                     <entry key="mountpoint" type="xstring" value="knime-temp-space"/>
                     <entry key="spaceId" type="xstring" value=""/>
                     <entry key="spaceName" type="xstring" value=""/>
@@ -25,8 +25,9 @@
                 </config>
                 <config key="path">
                     <entry key="location_present" type="xboolean" value="true"/>
-                    <entry key="file_system_type" type="xstring" value="LOCAL"/>
-                    <entry key="path" type="xstring" value="C:\Users\Kalzi\Desktop\Richtige Studium\Data Science\Projekt\05-staedte.xlsx"/>
+                    <entry key="file_system_type" type="xstring" value="RELATIVE"/>
+                    <entry key="file_system_specifier" type="xstring" value="knime.workflow"/>
+                    <entry key="path" type="xstring" value="../additional_data/05-staedte.xlsx"/>
                 </config>
                 <config key="filter_mode_Internals">
                     <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -72,7 +73,7 @@
         <config key="table_spec_config_Internals">
             <entry key="version" type="xstring" value="V4_4"/>
             <config key="individual_specs">
-                <config key="C:\Users\Kalzi\Desktop\Richtige Studium\Data Science\Projekt\05-staedte.xlsx">
+                <config key="../additional_data/05-staedte.xlsx">
                     <entry key="num_columns" type="xint" value="11"/>
                     <config key="0">
                         <entry key="name" type="xstring" value="Städte nach Fläche, Bevölkerung und Bevölkerungsdichte am 31.12.2024 (Jahr)"/>
@@ -444,7 +445,7 @@
                     <entry key="force_type" type="xboolean" value="false"/>
                 </config>
             </config>
-            <entry key="source_group_id" type="xstring" value="C:\Users\Kalzi\Desktop\Richtige Studium\Data Science\Projekt\05-staedte.xlsx"/>
+            <entry key="source_group_id" type="xstring" value="../additional_data/05-staedte.xlsx"/>
             <config key="config_id">
                 <config key="excel_reader">
                     <config key="settings">

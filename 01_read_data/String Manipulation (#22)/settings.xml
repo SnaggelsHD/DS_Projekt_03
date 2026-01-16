@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="expression" type="xstring" value="substr($file_name$, 12, 14) "/>
+        <entry key="expression" type="xstring" value="regexReplace(%%00010  regexReplace(%%00010    regexReplace($file_name$, &quot;^.*/&quot;, &quot;&quot;),%%00010    &quot;\\.json$&quot;,%%00010    &quot;&quot;%%00010  ),%%00010  &quot;^car_&quot;,%%00010  &quot;&quot;%%00010)"/>
         <entry key="replaced_column" type="xstring" value="timestamp_str"/>
         <entry key="append_column" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
@@ -55,6 +55,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="02fe21d1-5e5b-4b04-91df-13d6b357388d"/>
+        <entry key="file_store_id" type="xstring" value="95bd73db-02cc-4549-803d-f439b9f5334f"/>
     </config>
 </config>

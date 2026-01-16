@@ -29,33 +29,6 @@
             <entry key="class" type="xstring" value="STRING"/>
             <entry key="value" type="xstring" value=""/>
         </config>
-        <config key="Loop_Execute_5">
-            <entry key="type" type="xstring" value="loopcontext_execute"/>
-        </config>
-        <config key="Variable_6">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="currentIteration"/>
-            <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="2121"/>
-        </config>
-        <config key="Variable_7">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="station_id"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="DER:Station:66152669467486cc1f2b1f66"/>
-        </config>
-        <config key="Variable_8">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="vehicle_type_id"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="DER:VehicleType:vw_id3_pro_s"/>
-        </config>
-        <config key="Variable_9">
-            <entry key="type" type="xstring" value="variable"/>
-            <entry key="name" type="xstring" value="groupIdentifier"/>
-            <entry key="class" type="xstring" value="STRING"/>
-            <entry key="value" type="xstring" value="%DER:Station:66152669467486cc1f2b1f66%%00037%DER:VehicleType:vw_id3_pro_s%"/>
-        </config>
     </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
@@ -91,7 +64,7 @@
     </config>
     <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.meta.looper.group.GroupLoopStartNodeFactory"/>
     <entry key="node-name" type="xstring" value="Group Loop Start"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -104,19 +77,16 @@
     <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Group Loop Start"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
-            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 4"/>
-            <entry key="port_dir_location" type="xstring" value="port_1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9e436395-b3ae-4ff1-9853-0092813539cb"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

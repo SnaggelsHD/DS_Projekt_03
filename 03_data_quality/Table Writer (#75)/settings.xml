@@ -26,7 +26,7 @@
                 <entry key="location_present" type="xboolean" value="true"/>
                 <entry key="file_system_type" type="xstring" value="RELATIVE"/>
                 <entry key="file_system_specifier" type="xstring" value="knime.workflow"/>
-                <entry key="path" type="xstring" value="../Aufgabe_03_data_quality_sanitized.table"/>
+                <entry key="path" type="xstring" value="../tables/Aufgabe_03_data_quality_sanitized.table"/>
             </config>
             <config key="filter_mode_Internals">
                 <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -37,7 +37,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.io.filehandling.table.writer.TableWriterNodeFactory"/>
     <entry key="node-name" type="xstring" value="Table Writer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -54,11 +54,11 @@
         <config key="Data Table"/>
     </config>
     <entry key="name" type="xstring" value="Table Writer"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="fc49b182-8b2d-45c5-ab31-c477ba1878f2"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

@@ -25,7 +25,7 @@
                 <entry key="location_present" type="xboolean" value="true"/>
                 <entry key="file_system_type" type="xstring" value="RELATIVE"/>
                 <entry key="file_system_specifier" type="xstring" value="knime.workflow"/>
-                <entry key="path" type="xstring" value="../data"/>
+                <entry key="path" type="xstring" value="../station_status"/>
             </config>
             <config key="filter_mode_Internals">
                 <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -102,6 +102,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="83a25813-1f3c-4f5d-a9e6-9700132dd8d8"/>
+        <entry key="file_store_id" type="xstring" value="17b39d33-bf20-443e-989c-c69ab258cbf3"/>
     </config>
 </config>

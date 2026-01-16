@@ -16,7 +16,11 @@
         <entry key="omit.nested.objects" type="xboolean" value="true"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="There are multiple JSON columns. Automatically selected &quot;Bahnhof&quot; as input column."/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.json.node.totable.JSONToTableNodeFactory"/>
     <entry key="node-name" type="xstring" value="JSON to Table"/>
     <entry key="node-bundle-name" type="xstring" value="JSON related functionality for KNIME"/>
