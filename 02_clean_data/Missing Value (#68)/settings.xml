@@ -23,14 +23,8 @@
                 <config key="settings"/>
             </config>
             <config key="org.knime.core.data.def.StringCell">
-                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.FixedStringValueMissingCellHandlerFactory"/>
-                <config key="settings">
-                    <config key="fixStringValue_Internals">
-                        <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-                        <entry key="EnabledStatus" type="xboolean" value="true"/>
-                    </config>
-                    <entry key="fixStringValue" type="xstring" value="Unbekannt"/>
-                </config>
+                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoNothingMissingCellHandlerFactory"/>
+                <config key="settings"/>
             </config>
             <config key="org.knime.core.data.def.DoubleCell">
                 <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.FixedDoubleValueMissingCellHandlerFactory"/>
@@ -80,6 +74,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="028c304e-d78e-43a9-981e-4c89e738945d"/>
+        <entry key="file_store_id" type="xstring" value="49ab9e5c-6675-442a-b4dd-d0892965998f"/>
     </config>
 </config>

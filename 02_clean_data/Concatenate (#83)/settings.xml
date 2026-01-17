@@ -6,39 +6,17 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="matchCriteria" type="xstring" value="AND"/>
-        <config key="predicates">
-            <config key="0">
-                <config key="columnV2">
-                    <entry key="regularChoice" type="xstring" value="note"/>
-                    <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
-                </config>
-                <entry key="operator" type="xstring" value="WILDCARD"/>
-                <config key="predicateValues">
-                    <config key="values">
-                        <config key="0">
-                            <config key="typeIdentifier">
-                                <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-                                <entry key="is_null" type="xboolean" value="false"/>
-                            </config>
-                            <config key="stringCaseMatching">
-                                <entry key="caseMatching" type="xstring" value="CASESENSITIVE"/>
-                            </config>
-                            <entry key="value" type="xstring" value="*unklar*"/>
-                        </config>
-                    </config>
-                    <entry key="inputKind" type="xstring" value="SINGLE"/>
-                </config>
-            </config>
-        </config>
-        <entry key="domains" type="xstring" value="RETAIN"/>
-        <entry key="outputMode" type="xstring" value="MATCHING"/>
+        <entry key="create_new_rowids" type="xboolean" value="true"/>
+        <entry key="fail_on_duplicates" type="xboolean" value="false"/>
+        <entry key="append_suffix" type="xboolean" value="false"/>
+        <entry key="intersection_of_columns" type="xboolean" value="false"/>
+        <entry key="suffix" type="xstring" value="_dup"/>
+        <entry key="enable_hiliting" type="xboolean" value="false"/>
     </config>
-    <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.row3.RowFilterNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Row Filter"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.append.row.AppendedRowsNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Concatenate"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -48,7 +26,11 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="5.9.0.v202511140634"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Row Filter"/>
+    <config key="node_creation_config">
+        <config key="input"/>
+        <config key="Concatenated tables"/>
+    </config>
+    <entry key="name" type="xstring" value="Concatenate"/>
     <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
