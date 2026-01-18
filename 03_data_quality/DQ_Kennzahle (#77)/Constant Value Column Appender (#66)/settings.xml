@@ -18,7 +18,7 @@
                 <entry key="customOrMissingValue" type="xstring" value="CUSTOM"/>
                 <config key="customValueParameters">
                     <entry key="@class" type="xstring" value="org.knime.core.webui.node.dialog.defaultdialog.internal.dynamic.extensions.createcell.CoreCreateDataCellParameters$FromStringCellParameters"/>
-                    <entry key="value" type="xstring" value="Mean Completeness"/>
+                    <entry key="value" type="xstring" value="Mean Time Completeness"/>
                 </config>
             </config>
         </config>
@@ -45,12 +45,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 3"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 2"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="124677c1-1aaf-476d-bd41-e71fc7970025"/>
+        <entry key="file_store_id" type="xstring" value="d1b5a2fa-62f9-4631-a7be-67ac0e676b61"/>
     </config>
 </config>

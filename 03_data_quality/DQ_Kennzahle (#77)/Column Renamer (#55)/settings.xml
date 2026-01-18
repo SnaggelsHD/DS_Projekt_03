@@ -8,7 +8,7 @@
     <config key="model">
         <config key="renamings">
             <config key="0">
-                <entry key="oldName" type="xstring" value="missing_rate(vehicle_type_id)"/>
+                <entry key="oldName" type="xstring" value="Max"/>
                 <entry key="newName" type="xstring" value="Wert"/>
             </config>
         </config>
@@ -36,12 +36,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 8"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 10"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="85426b9d-8917-4540-9d9d-08916d55706d"/>
+        <entry key="file_store_id" type="xstring" value="ed024e8d-cb48-4629-9ff8-d87f4872e4ee"/>
     </config>
 </config>

@@ -37,9 +37,6 @@
             <config key="port_2">
                 <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
             </config>
-            <config key="port_3">
-                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            </config>
         </config>
         <config key="Concatenated tables"/>
     </config>
@@ -51,12 +48,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 6, Cols: 2"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 5, Cols: 2"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="69165524-aed6-42dc-8787-5653e6178d40"/>
+        <entry key="file_store_id" type="xstring" value="164699fb-6d08-4a57-a440-22007d656944"/>
     </config>
 </config>

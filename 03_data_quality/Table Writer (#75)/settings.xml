@@ -37,7 +37,7 @@
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.io.filehandling.table.writer.TableWriterNodeFactory"/>
     <entry key="node-name" type="xstring" value="Table Writer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -54,11 +54,11 @@
         <config key="Data Table"/>
     </config>
     <entry key="name" type="xstring" value="Table Writer"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="1f1b9e6a-93e0-4256-b8ab-3a6e4069eeea"/>
     </config>
 </config>

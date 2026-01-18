@@ -22,16 +22,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="WARNING"/>
-        <entry key="message" type="xstring" value="Contains an unconnected node (&quot;Concatenate #69&quot;)"/>
-        <config key="resolutions">
-            <entry key="array-size" type="xint" value="2"/>
-            <entry key="0" type="xstring" value="Properly connect the node(s)."/>
-            <entry key="1" type="xstring" value="Delete unconnected node(s) from inner workflow."/>
-        </config>
-    </config>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="workflow-file" type="xstring" value="workflow.knime"/>
     <entry key="virtual-in-ID" type="xint" value="1"/>
     <config key="inports">
