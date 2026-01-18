@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="python3_command" type="xstring" value=""/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import matplotlib.pyplot as plt%%00010import numpy as np%%00010%%00010# Daten laden%%00010df = knio.input_tables[0].to_pandas()%%00010actual = df['y'].values%%00010predicted = df['prediction'].values%%00010%%00010# Absoluter Fehler für Farbcodierung%%00010abs_error = np.abs(actual - predicted)%%00010%%00010# Figure erstellen%%00010fig, ax = plt.subplots(figsize=(11, 8))%%00010%%00010# Scatter plot mit Farbcodierung nach Fehler%%00010scatter = ax.scatter(actual, predicted, %%00010                     alpha=0.6, s=50, %%00010                     c=abs_error,  # Farbe = Fehler%%00010                     cmap='RdYlGn_r',  # Rot = großer Fehler, Grün = kleiner Fehler%%00010                     edgecolors='black', linewidth=0.5)%%00010%%00010# Colorbar%%00010cbar = plt.colorbar(scatter, ax=ax)%%00010cbar.set_label('Absoluter Fehler', fontsize=12, fontweight='bold')%%00010%%00010# Referenzlinie y=x%%00010min_val = min(actual.min(), predicted.min())%%00010max_val = max(actual.max(), predicted.max())%%00010ax.plot([min_val, max_val], [min_val, max_val], %%00010        'b--', linewidth=3, label='Perfekte Vorhersage', zorder=5)%%00010%%00010# Beschriftungen%%00010ax.set_xlabel('Tatsächliche Auto-Verfügbarkeit', fontsize=13, fontweight='bold')%%00010ax.set_ylabel('Vorhergesagte Auto-Verfügbarkeit', fontsize=13, fontweight='bold')%%00010ax.set_title('XGBoost Modell: Actual vs Predicted\n(Farbe zeigt Vorhersagefehler)', %%00010            fontsize=15, fontweight='bold', pad=20)%%00010ax.legend(fontsize=12, loc='upper left')%%00010ax.grid(True, alpha=0.3, linestyle='--')%%00010%%00010# Statistiken%%00010r2 = np.corrcoef(actual, predicted)[0, 1]**2%%00010rmse = np.sqrt(np.mean((actual - predicted)**2))%%00010mae = np.mean(abs_error)%%00010%%00010textstr = f'R² = {r2:.4f}\nRMSE = {rmse:.4f}\nMAE = {mae:.4f}\nn = {len(actual):,}'%%00010props = dict(boxstyle='round', facecolor='lightblue', alpha=0.9, %%00010            edgecolor='navy', linewidth=2)%%00010ax.text(0.97, 0.03, textstr, transform=ax.transAxes, fontsize=12,%%00010        verticalalignment='bottom', horizontalalignment='right', bbox=props)%%00010%%00010plt.tight_layout()%%00010%%00010# Output%%00010knio.output_view = knio.view(fig)"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value=""/>
+                <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.view.PythonViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python View"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+    </config>
+    <entry key="name" type="xstring" value="Python View"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports"/>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

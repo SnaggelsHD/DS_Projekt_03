@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="python3_command" type="xstring" value=""/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import matplotlib.pyplot as plt%%00010%%00010# Daten laden%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# Metriken extrahieren (ohne NaN)%%00010metrics = []%%00010values = []%%00010colors = []%%00010%%00010color_map = {%%00010    'mean absolute error': ('#2196F3', 'MAE'),%%00010    'mean squared error': ('#4CAF50', 'MSE'),%%00010    'root mean squared error': ('#FF9800', 'RMSE'),%%00010    'mean signed difference': ('#9C27B0', 'MSD')%%00010}%%00010%%00010for idx, row in df.iterrows():%%00010    metric_name = row['Metrik']%%00010    metric_value = row['prediction']%%00010    %%00010    # NaN überspringen%%00010    if pd.isna(metric_value):%%00010        continue%%00010    %%00010    # Suche nach Mapping%%00010    for key, (color, short_name) in color_map.items():%%00010        if key in metric_name.lower():%%00010            metrics.append(short_name)%%00010            values.append(float(metric_value))%%00010            colors.append(color)%%00010            break%%00010%%00010# Plot%%00010fig, ax = plt.subplots(figsize=(10, 6))%%00010%%00010bars = ax.barh(metrics, values, color=colors, alpha=0.8, edgecolor='black', linewidth=2)%%00010%%00010# Werte%%00010for bar, value in zip(bars, values):%%00010    width = bar.get_width()%%00010    ax.text(width + max(values)*0.02, bar.get_y() + bar.get_height()/2,%%00010            f'{value:.4f}',%%00010            ha='left', va='center', fontsize=14, fontweight='bold')%%00010%%00010ax.set_xlabel('Fehler-Wert', fontsize=14, fontweight='bold')%%00010ax.set_title('Fehlermetriken', fontsize=16, fontweight='bold')%%00010ax.grid(True, alpha=0.3, axis='x')%%00010ax.invert_yaxis()%%00010%%00010plt.tight_layout()%%00010knio.output_view = knio.view(fig)"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value=""/>
+                <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.view.PythonViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python View"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+    </config>
+    <entry key="name" type="xstring" value="Python View"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports"/>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

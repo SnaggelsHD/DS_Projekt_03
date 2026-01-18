@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="python3_command" type="xstring" value=""/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import matplotlib.pyplot as plt%%00010import pandas as pd%%00010import numpy as np%%00010%%00010# Daten laden%%00010df = knio.input_tables[0].to_pandas()%%00010%%00010# Timestamp zu datetime konvertieren%%00010df['timestamp'] = pd.to_datetime(df['timestamp'])%%00010df['hour'] = df['timestamp'].dt.hour%%00010%%00010# Fehler berechnen (falls nicht vorhanden)%%00010if 'Absolute Error' not in df.columns:%%00010    df['Absolute Error'] = np.abs(df['y'] - df['prediction'])%%00010%%00010# Gruppierung nach Stunde%%00010hourly_stats = df.groupby('hour').agg({%%00010    'Absolute Error': ['mean', 'median', 'std'],%%00010    'y': 'count'%%00010}).reset_index()%%00010%%00010hourly_stats.columns = ['hour', 'MAE', 'Median_Error', 'Std_Error', 'count']%%00010%%00010# Figure mit 2 Subplots%%00010fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))%%00010%%00010# Plot 1: Durchschnittlicher Fehler nach Uhrzeit%%00010ax1.bar(hourly_stats['hour'], hourly_stats['MAE'], %%00010        color='steelblue', alpha=0.7, edgecolor='navy')%%00010ax1.plot(hourly_stats['hour'], hourly_stats['MAE'], %%00010         'r-o', linewidth=2, markersize=6, label='MAE Trend')%%00010%%00010ax1.set_xlabel('Uhrzeit (Stunde)', fontsize=12, fontweight='bold')%%00010ax1.set_ylabel('Durchschnittlicher Absoluter Fehler', fontsize=12, fontweight='bold')%%00010ax1.set_title('Vorhersagefehler nach Tageszeit', fontsize=14, fontweight='bold')%%00010ax1.set_xticks(range(0, 24))%%00010ax1.grid(True, alpha=0.3, axis='y')%%00010ax1.legend()%%00010%%00010# Beste und schlechteste Stunden markieren%%00010best_hour = hourly_stats.loc[hourly_stats['MAE'].idxmin(), 'hour']%%00010worst_hour = hourly_stats.loc[hourly_stats['MAE'].idxmax(), 'hour']%%00010%%00010ax1.axvline(best_hour, color='green', linestyle='--', alpha=0.5, %%00010           label=f'Beste Stunde: {int(best_hour)}:00')%%00010ax1.axvline(worst_hour, color='red', linestyle='--', alpha=0.5, %%00010           label=f'Schlechteste Stunde: {int(worst_hour)}:00')%%00010ax1.legend()%%00010%%00010# Plot 2: Anzahl Vorhersagen pro Stunde%%00010ax2.bar(hourly_stats['hour'], hourly_stats['count'], %%00010        color='lightcoral', alpha=0.7, edgecolor='darkred')%%00010ax2.set_xlabel('Uhrzeit (Stunde)', fontsize=12, fontweight='bold')%%00010ax2.set_ylabel('Anzahl Vorhersagen', fontsize=12, fontweight='bold')%%00010ax2.set_title('Datenverteilung über den Tag', fontsize=14, fontweight='bold')%%00010ax2.set_xticks(range(0, 24))%%00010ax2.grid(True, alpha=0.3, axis='y')%%00010%%00010plt.tight_layout()%%00010%%00010# Output%%00010knio.output_view = knio.view(fig)"/>
+    </config>
+    <config key="variables">
+        <entry key="version" type="xstring" value="V_2019_09_13"/>
+        <config key="tree">
+            <config key="python3_command">
+                <entry key="used_variable" type="xstring" value=""/>
+                <entry key="used_variable_flawed" type="xboolean" value="false"/>
+                <entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+            </config>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes2.view.PythonViewNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python View"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.9.0.v202511131614"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.9.0.v202511131614"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+    </config>
+    <entry key="name" type="xstring" value="Python View"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports"/>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>
